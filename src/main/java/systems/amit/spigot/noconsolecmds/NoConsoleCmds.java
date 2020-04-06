@@ -23,7 +23,7 @@ public class NoConsoleCmds extends JavaPlugin implements Listener {
 
         getServer().getPluginManager().registerEvents(this, this);
 
-        getLogger().info("The plugin has been enabled (" + blockedCmds.size() + " blocked commands)");
+        getLogger().info("The plugin has been enabled v" + getDescription().getVersion() + " (" + blockedCmds.size() + " blocked commands)");
     }
 
     @Override
