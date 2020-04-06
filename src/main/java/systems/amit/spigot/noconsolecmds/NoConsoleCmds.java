@@ -48,7 +48,7 @@ public class NoConsoleCmds extends JavaPlugin implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onConsoleCommand(ServerCommandEvent e) {
-        if (blockedCmds.contains(e.getCommand())) {
+        if (blockedCmds.contains(e.getCommand().split(" ")[0])) {
             e.setCancelled(true);
         }
     }

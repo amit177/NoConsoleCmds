@@ -1,6 +1,6 @@
 name: NoConsoleCmds
 author: amit177
-version: 1.0
+version: 1.1
 description: A plugin that blocks console from executing commands
 main: systems.amit.spigot.noconsolecmds.NoConsoleCmds
 commands:
