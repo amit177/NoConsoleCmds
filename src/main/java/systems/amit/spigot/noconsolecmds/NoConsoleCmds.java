@@ -1,5 +1,6 @@
 package systems.amit.spigot.noconsolecmds;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -22,6 +23,7 @@ public class NoConsoleCmds extends JavaPlugin implements Listener {
         }
 
         getServer().getPluginManager().registerEvents(this, this);
+        new Metrics(this, 7714);
 
         getLogger().info("The plugin has been enabled v" + getDescription().getVersion() + " (" + blockedCmds.size() + " blocked commands)");
     }
